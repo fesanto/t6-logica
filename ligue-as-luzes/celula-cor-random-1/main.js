@@ -19,8 +19,6 @@ for (let i = 0; i < size; i++) {
 }
 console.log (matrix)
 
-const colors = ["red", "yellow", "blue", "green", "black", "lavender", "orange", "pink"]
-
 
 for (const row of matrix) {
 	for (const cell of row) {
@@ -30,15 +28,11 @@ for (const row of matrix) {
             //     painted_cell.classList.remove("painted")
             // } (SE QUISER LIMPAR O QUE FOI PINTADO, DESCOMENTA ESSE FOR)
 
-			const random_index = Math.floor(Math.random() * colors.length)
-			cell.style.backgroundColor = colors[random_index]
-			
-			//OU
-			//***apaga a const colors lá de cima***
-			//const r = Math.floor(Math.random() * 256)
-			//const g = Math.floor(Math.random() * 256)
-			//const b = Math.floor(Math.random() * 256)
-			//cell.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 1)`
+
+			const r = Math.floor(Math.random() * 256)
+			const g = Math.floor(Math.random() * 256)
+			const b = Math.floor(Math.random() * 256)
+			cell.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 1)`
 
 
 			//OU
